@@ -12,6 +12,8 @@ public class B8A_Group3 {
      */
     public static void main(String[] args) {
        system.out.print("hi im asala");
+       
+       system.out.print("Hi Im Maha");
     }
     
 }
