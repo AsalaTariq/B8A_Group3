@@ -19,6 +19,8 @@ public class B8A_Group3 {
         
         system.out.print("Hi Im tala");
         
+        system.out.println("Hi I'm Dalal");
+        
     }
     
 }
