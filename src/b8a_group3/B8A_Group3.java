@@ -12,10 +12,9 @@ public class B8A_Group3 {
      */
     public static void main(String[] args) {
        system.out.print("hi im asala");
-       
-       system.out.print("Hi Im Maha");
-        
+      
         System.out.print("Hello I am Atheel");
+        System.out.print("Hi, Im Maha");
         
         system.out.print("Hi Im tala");
         
