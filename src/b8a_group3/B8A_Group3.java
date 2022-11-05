@@ -24,7 +24,9 @@ public class B8A_Group3 {
         int[] RegularDonuts_Price = {6, 6, 8, 8};
 
         Customer customer1 = new Customer();
-        File Dots_Summary = new File("Dots_Summary.txt");
+         File Dots_Summary = new File("Dots_Summary.txt");
+        File Customer_review = new File("Customer_review.txt");
+        PrintWriter revwrite = new PrintWriter(Customer_review);
         PrintWriter output = new PrintWriter(Dots_Summary);
         String type = "";
         String[] typeAndFlavor = new String[8];
@@ -128,8 +130,10 @@ public class B8A_Group3 {
                     break;
                 }
                 
-                case 3:{
-                    //Write a review
+                case 3: {
+
+                    System.out.println(Write_review(revwrite));
+                    break;
                 }
                 default: {
                     //Show Summary
@@ -228,5 +232,18 @@ public class B8A_Group3 {
             output.print("\nPayment status: pending ☆☆☆☆");
         }
 
+    }
+    public static String Write_review(PrintWriter revwrite) {
+        System.out.println("We hope you liked dounts, "
+                + "Tell us what's your opinion ♡♡♡ ?");
+        Scanner r = new Scanner(System.in);
+        String rev = r.nextLine();
+        revwrite.append("Your review ☆☆☆☆: ");
+        revwrite.append(rev);
+        String message = "\nYour review has been recived, Thank you ♡♡♡";
+        revwrite.append(message);
+        revwrite.flush();
+        revwrite.close();
+        return message;
     }
 }
