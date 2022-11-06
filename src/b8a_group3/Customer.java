@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package b8a_group3;
 
 /**
@@ -12,15 +8,24 @@ package b8a_group3;
 import java.util.*;
 public class Customer {
     private ArrayList<String> orders = new ArrayList<String>();
-     private String FisrtStreetName , LastStreetName;  
+    private String FisrtStreetName , LastStreetName;  
     private String CardNumber;
     private String CCV;
     private String neighborhoodName;
     
-    
-   //--------------------------------------------
     Customer(){
         
+    }
+    
+    
+   //--------------------------------------------
+     Customer(String FisrtStreetName,String LastStreetName, String CardNumber, String CCV, String neighborhoodName ){
+       
+       this.FisrtStreetName = FisrtStreetName;
+       this. LastStreetName =  LastStreetName;
+       this.CardNumber = CardNumber;
+       this.CCV = CCV;
+       this.neighborhoodName = neighborhoodName;
     }
     //search();
     public void addOrder(String[] typeAndFlavor){
@@ -67,7 +72,7 @@ public class Customer {
         if (total > 20) {
         System.out.print("Enter the name of the neighborhood:");
         neighborhoodName=input.next();
-        System.out.print("The Street Nmae:");
+        System.out.print("The Street Name:");
         FisrtStreetName=input.next();
         LastStreetName=input.next();
         System.out.println("\n☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆");  

@@ -24,7 +24,7 @@ public class B8A_Group3 {
         int[] RegularDonuts_Price = {6, 6, 8, 8};
 
         Customer customer1 = new Customer();
-         File Dots_Summary = new File("Dots_Summary.txt");
+        File Dots_Summary = new File("Dots_Summary.txt");
         File Customer_review = new File("Customer_review.txt");
         PrintWriter revwrite = new PrintWriter(Customer_review);
         PrintWriter output = new PrintWriter(Dots_Summary);
