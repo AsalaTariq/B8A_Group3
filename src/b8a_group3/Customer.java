@@ -27,7 +27,7 @@ public class Customer {
        this.CCV = CCV;
        this.neighborhoodName = neighborhoodName;
     }
-    //search();
+
     public void addOrder(String[] typeAndFlavor){
         for (int i = 0; i < typeAndFlavor.length; i++) {
             if(typeAndFlavor[i] != null){
